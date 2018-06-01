@@ -15,6 +15,15 @@ class String
   end
 
   def count_sentences
-
-  end
+    array = self.split(/\W+/) 
+    counter = 0 
+    while counter <= array.length 
+      array.each do |x|
+        if sentence?(x) || question?(x) || exclamation?(x) && x.length > 1 
+          counter += 1 
+        end 
+      end 
+    
+      counter 
+    end
 end
