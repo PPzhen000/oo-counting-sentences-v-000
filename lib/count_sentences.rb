@@ -19,7 +19,7 @@ class String
     # binding.pry
     counter = 0
       array.each do |x|
-        if sentence?(x) || question?(x) || exclamation?(x) && x.length > 1
+        if x.sentence? || x.question? || x.exclamation? && x.length > 1
           counter += 1
         end
       end
