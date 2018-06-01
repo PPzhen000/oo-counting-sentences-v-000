@@ -24,7 +24,7 @@ class String
         end
       end
     counter
-  end 
+  end
 
 
 
